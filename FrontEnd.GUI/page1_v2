@@ -1,0 +1,28 @@
+import tkinter as tk
+import customtkinter
+from PIL import Image
+
+ruta = tk.Tk()
+ruta.geometry("363x786")
+
+# ladda in bakgrundsbild
+oliverAssets = "C:/Users/olive/Documents/Oliver skola/Python/Quizzapp/assets/"
+danielAssets = "?"
+bg_image = customtkinter.CTkImage(Image.open(oliverAssets + "/background.png"),
+                                               size=(363, 786))
+# Visa bakgrundsbild med label
+label1 = customtkinter.CTkLabel(ruta, image = bg_image) 
+label1.place(x = 0, y = 0) 
+
+def button_function():
+    print("Start")
+skriv_namn_text = tk.Label(ruta, text="Skriv ditt namn:")
+skriv_namn_text.place(relx=0.5, rely=0.45, anchor="center")
+
+text_namn = tk.Entry(ruta)
+text_namn.place(relx=0.5, rely=0.5, anchor="center")
+
+button = customtkinter.CTkButton(ruta, command=button_function, text="Välj kategori")
+button.pack(side=tk.BOTTOM, pady=(0,100))
+
+ruta.mainloop()
