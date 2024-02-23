@@ -3,7 +3,7 @@ import json
 
 Matematik_f = [
     {
-        "fraga": "V-",
+        "fraga": "-",
         "alternativ": ["-", "-", "-", "-"],
         "r_svar": "-"
     }
@@ -12,7 +12,7 @@ Matematik_f = [
 
 Engelska_f = [
     {
-        "fraga": "V-",
+        "fraga": "-",
         "alternativ": ["-", "-", "-", "-"],
         "r_svar": "-"
     }
@@ -21,7 +21,7 @@ Engelska_f = [
 
 Svenska_f = [
     {
-        "fraga": "V-",
+        "fraga": "-",
         "alternativ": ["-", "-", "-", "-"],
         "r_svar": "-"
     }
