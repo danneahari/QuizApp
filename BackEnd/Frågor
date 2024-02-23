@@ -1,24 +1,42 @@
 import json
 
 
-Fragor = [
+Matematik_f = [
     {
-        "fragor": "Vad heter du??",
-        "alternativ": ["Rom", "Madrid", "Paris", "London"],
-        "R_svar": "Daniel"
-    },
-    {
-        "fragor": "Vad är 2+3?",
-        "alternativ": ["3", "4", "5", "6"],
-        "R_svar": "5"
-    },
-    {
-        "fragor": "Vad är huvudstaden i Norge?",
-        "alternativ": ["Peking", "Oslo", "Seoul", "Bangkok"],
-        "R_svar": "Oslo"
+        "fraga": "V-",
+        "alternativ": ["-", "-", "-", "-"],
+        "r_svar": "-"
     }
 ]
 
-# Spara frågorna i en JSON-fil
+
+Engelska_f = [
+    {
+        "fraga": "V-",
+        "alternativ": ["-", "-", "-", "-"],
+        "r_svar": "-"
+    }
+]
+
+
+Svenska_f = [
+    {
+        "fraga": "V-",
+        "alternativ": ["-", "-", "-", "-"],
+        "r_svar": "-"
+    }
+]
+
+
+
+
+Fragor = {
+    "Matematik": Matematik_f,
+    "Svenska": Svenska_f,
+    "Engelska": Engelska_f,
+   
+}
+
+
 with open("questions.json", "w") as json_file:
-    json.dump(questions, json_file, indent=4)
+    json.dump(Fragor, json_file, indent=3)
