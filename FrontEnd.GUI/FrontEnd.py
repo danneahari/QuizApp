@@ -107,7 +107,7 @@ def frågeSida():
 
     # Rita in poängsymbol
     logga_img = Image.open(Assets + "/points.png")
-    logga_img = logga_img.resize((30,30), Image.ANTIALIAS)
+    logga_img = logga_img.resize((30,30))
     logga_img = ImageTk.PhotoImage(logga_img)
     canvas.create_image(300,60,image=logga_img)
 
